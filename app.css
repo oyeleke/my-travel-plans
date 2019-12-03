@@ -1,8 +1,29 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
 }
 
-#paris {
-    background-color: #d32f2f;
-}    flex-flow: wrap;
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+.destination-container {
+    display: flex;
+    flex-flow: wrap;
     justify-content: center;
 }
 
@@ -22,9 +43,19 @@
 h2 {
     margin: 0;
     transform: rotate(-45deg);
+    transition: transform 0.5s;
     text-shadow: 0 0 5px #01579b;
 }
 
 #florida {
-    background-co
+    background-color: #03a9f4;
+}
+
+#paris {
+    background-color: #d32f2f;
+}
+
+.destination:hover h2 {
+    transform: rotate(0deg);
+}
 
